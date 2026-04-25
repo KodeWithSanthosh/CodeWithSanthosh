@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santhosh Angadipeta – Java Full Stack Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">SA<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-dark">
+            <!-- Moon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <span class="theme-icon theme-icon-light">
+            <!-- Sun -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </span>
+          <span class="theme-track"><span class="theme-thumb"></span></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <header class="hero" id="home">
+    <div class="hero-inner">
+
+      <!-- LEFT: text content -->
+      <div class="hero-text">
+        <p class="hero-label">Java Full Stack Engineer</p>
+        <h1 class="hero-name">Santhosh<br />Angadipeta</h1>
+        <p class="hero-summary">
+          Building distributed systems and high-throughput microservices for Banking &amp; Financial Services.
+          2.6+ years delivering APIs, ETL pipelines, and React interfaces that handle real-world production scale.
+        </p>
+        <div class="hero-cta">
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <span>Hyderabad, India</span>
+          <span class="divider">·</span>
+          <span>Open to Opportunities</span>
+          <span class="divider">·</span>
+          <a href="mailto:santhoshangadipeta.sde@gmail.com">santhoshangadipeta.sde@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: profile photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-container">
+          <img class="hero-photo-img loaded" src="profile.jpeg" alt="" />
+        </div>
+        <div class="hero-photo-dots"></div>
+        <div class="hero-photo-accent"></div>
+      </div>
+
+    </div>
+    <div class="hero-grid-overlay"></div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ IMPACT HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container highlights-grid">
+      <div class="highlight-card">
+        <span class="highlight-num">1M<span class="accent">+</span></span>
+        <span class="highlight-label">Records with &lt;1s p95 UI latency</span>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">40K<span class="accent">+</span></span>
+        <span class="highlight-label">Records processed daily via ETL pipeline</span>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">67<span class="accent">%</span></span>
+        <span class="highlight-label">Search &amp; reporting performance improvement</span>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">22<span class="accent">%</span></span>
+        <span class="highlight-label">Batch processing time reduction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="section-label-col">
+        <p class="section-label">01 / About</p>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-heading">Backend-first.<br />Impact-driven.</h2>
+        <p class="about-body">
+          I'm a Java Full Stack Engineer at Virtusa, working on the JPMC Banking &amp; Financial Services account. My
+          day-to-day involves designing and shipping production microservices that handle real regulatory workloads —
+          from automated tax-compliance ETL pipelines processing 40K+ records nightly to a case management platform
+          serving 200+ analysts.
+        </p>
+        <p class="about-body">
+          I care about system design, observable infrastructure, and measurable outcomes. I don't just write code — I
+          track latency, profile queries, and think about failure modes before a system ships.
+        </p>
+        <div class="about-pills">
+          <span class="pill">Distributed Systems</span>
+          <span class="pill">Spring Boot Microservices</span>
+          <span class="pill">ETL &amp; Batch Processing</span>
+          <span class="pill">Database Optimization</span>
+          <span class="pill">AWS Cloud Deployments</span>
+          <span class="pill">RBAC &amp; Access Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header-row">
+        <p class="section-label">02 / Skills</p>
+        <h2 class="section-heading-inline">Technical Stack</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Java</span>
+            <span class="tag tag-primary">Spring Boot</span>
+            <span class="tag tag-primary">Spring Batch</span>
+            <span class="tag tag-primary">Spring Security</span>
+            <span class="tag tag-primary">JPA / Hibernate</span>
+            <span class="tag tag-primary">Microservices</span>
+            <span class="tag tag-primary">REST API Design</span>
+            <span class="tag tag-primary">Liquibase</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data &amp; Messaging</h3>
+          <div class="skill-tags">
+            <span class="tag tag-data">PostgreSQL</span>
+            <span class="tag tag-data">Aurora PostgreSQL</span>
+            <span class="tag tag-data">Oracle</span>
+            <span class="tag tag-data">MySQL</span>
+            <span class="tag tag-data">Kafka</span>
+            <span class="tag tag-data">Caffeine Cache</span>
+            <span class="tag tag-data">Redis</span>
+            <span class="tag tag-data">SQL Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Cloud &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag tag-cloud">AWS IAM</span>
+            <span class="tag tag-cloud">AWS S3</span>
+            <span class="tag tag-cloud">AWS EC2</span>
+            <span class="tag tag-cloud">AWS ECS</span>
+            <span class="tag tag-cloud">AWS RDS</span>
+            <span class="tag tag-cloud">CloudWatch</span>
+            <span class="tag tag-cloud">Docker</span>
+            <span class="tag tag-cloud">Jenkins</span>
+            <span class="tag tag-cloud">CI/CD Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frontend &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag tag-tools">React.js</span>
+            <span class="tag tag-tools">AG Grid</span>
+            <span class="tag tag-tools">JavaScript</span>
+            <span class="tag tag-tools">HTML / CSS</span>
+
+            <span class="tag tag-tools">Dynatrace</span>
+            <span class="tag tag-tools">Splunk</span>
+            <span class="tag tag-tools">JMeter</span>
+            <span class="tag tag-tools">Bruno</span>
+            <span class="tag tag-tools">DBeaver</span>
+            <span class="tag tag-tools">IDEA</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ EXPERIENCE -->
+  <!-- ═══════════════════════════════════════════ EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header-row">
+        <p class="section-label">03 / Experience</p>
+        <h2 class="section-heading-inline">Work History</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Role 1 -->
+        <div class="timeline-entry">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2024 – Present</span>
+            <span class="timeline-company">Virtusa Consulting Services</span>
+            <span class="timeline-client">JPMC Client · Banking &amp; Financial Services</span>
+            <span class="timeline-role">Associate Software Engineer</span>
+            <span class="timeline-location">Hyderabad, Telangana</span>
+          </div>
+          <div class="timeline-body">
+
+            <div class="project-block">
+              <h4 class="project-block-title">Case Management System <span class="project-block-period">Aug 2024 –
+                  Present</span></h4>
+              <ul class="bullet-list">
+                <li>Architected an end-to-end workflow-driven case lifecycle platform for <strong>200+
+                    analysts</strong>, owning REST API design, server-side search &amp; filtering, metrics dashboard,
+                  and RBAC — backed by a React frontend.</li>
+                <li>Achieved <strong>&lt;1s p95 UI latency across 1M+ records</strong> under real-time production load
+                  through server-side pagination and a Caffeine cache layer, eliminating repeated database reads.</li>
+                <li>Drove <strong>≈67% improvement in search and reporting performance</strong> via Aurora PostgreSQL
+                  schema optimization and targeted indexing; enforced zero-downtime schema evolution with Liquibase.
+                </li>
+                <li>Reduced report turnaround <strong>from hours to seconds</strong> by building a CSV export module;
+                  standardized inter-service contracts across 3 microservices using Feign Clients, cutting inter-service
+                  coupling.</li>
+                <li>Supported <strong>CI/CD deployments to AWS ECS</strong> across dev, UAT &amp; prod environments
+                  through Jenkins pipelines.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-block-title">Centralized Authorization System <span class="project-block-period">Aug
+                  2024 – Present</span></h4>
+              <ul class="bullet-list">
+                <li>Consolidated access control across <strong>3+ platform applications</strong> into a single
+                  hierarchical permission model, eliminating duplicate role management and enforcing consistent
+                  governance org-wide.</li>
+                <li>Delivered <strong>100% audit traceability</strong> on all access events — every role assignment and
+                  permission change timestamped and instantly reconstructable, eliminating manual log investigation
+                  entirely.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-block-title">Tax Document Cross-Certification System <span
+                  class="project-block-period">Jan 2024 – Aug 2024</span></h4>
+              <ul class="bullet-list">
+                <li>Replaced fully manual certification with an automated <strong>Spring Batch ETL pipeline processing
+                    40K+ records daily at 99.9% data integrity</strong>, eliminating SLA breaches on critical regulatory
+                  jobs.</li>
+                <li>Cut overnight batch processing time by <strong>22%</strong> through transformation logic refactoring
+                  and pipeline tuning.</li>
+                <li>Automated compliance letter dispatch on real-time document validation outcomes, eliminating manual
+                  intervention across <strong>5K+ compliance records per day</strong> while meeting strict banking
+                  standards.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-entry">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jun 2023 – Sep 2023</span>
+            <span class="timeline-company">Virtusa Consulting Services</span>
+            <span class="timeline-role">Intern – Delivery</span>
+            <span class="timeline-location">Hyderabad, Telangana</span>
+          </div>
+          <div class="timeline-body">
+            <ul class="bullet-list">
+              <li>Built internal proof-of-concept applications and authored Confluence documentation to support
+                onboarding and architectural decisions.</li>
+              <li>Gained hands-on exposure to microservices design patterns, agile delivery workflows, and enterprise
+                Java development practices.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header-row">
+        <p class="section-label">04 / Projects</p>
+        <h2 class="section-heading-inline">Production Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3 class="project-card-title">Case Management Platform — JPMC</h3>
+            <span class="project-badge">Production</span>
+          </div>
+          <p class="project-problem"><span class="label-micro">Problem</span> 200+ analysts managing complex banking
+            workflows with no unified system — leading to operational inefficiency and poor auditability.</p>
+          <p class="project-solution"><span class="label-micro">Solution</span> Designed and owned full-stack case
+            lifecycle platform: scalable REST APIs, RBAC, advanced search &amp; filtering with server-side pagination,
+            and a real-time metrics dashboard backed by Aurora PostgreSQL.</p>
+          <div class="project-stack">
+            <span class="tag tag-sm">Spring Boot</span>
+            <span class="tag tag-sm">Aurora PostgreSQL</span>
+            <span class="tag tag-sm">Caffeine Cache</span>
+            <span class="tag tag-sm">Feign Clients</span>
+            <span class="tag tag-sm">React.js</span>
+            <span class="tag tag-sm">AG Grid</span>
+            <span class="tag tag-sm">Liquibase</span>
+            <span class="tag tag-sm">AWS ECS</span>
+          </div>
+          <p class="project-impact"><span class="label-micro">Impact</span> <strong>&lt;1s p95 latency</strong> over 1M+
+            records; <strong>67% faster</strong> search and reporting in production.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3 class="project-card-title">Tax Document ETL Pipeline — JPMC</h3>
+            <span class="project-badge">Production</span>
+          </div>
+          <p class="project-problem"><span class="label-micro">Problem</span> Manual tax document certification created
+            SLA risks on regulatory deadlines and required constant analyst intervention on thousands of compliance
+            records daily.</p>
+          <p class="project-solution"><span class="label-micro">Solution</span> Designed and delivered a Spring Batch
+            ETL pipeline with multi-step transformation logic, automated compliance letter dispatch, and real-time
+            validation outcomes — replacing the entire manual workflow end-to-end.</p>
+          <div class="project-stack">
+            <span class="tag tag-sm">Spring Batch</span>
+            <span class="tag tag-sm">Java</span>
+            <span class="tag tag-sm">Oracle DB</span>
+            <span class="tag tag-sm">Spring Boot</span>
+            <span class="tag tag-sm">Jenkins</span>
+          </div>
+          <p class="project-impact"><span class="label-micro">Impact</span> <strong>40K+ records/day</strong> at 99.9%
+            data integrity; overnight batch time cut by <strong>22%</strong>; zero SLA breaches post-launch.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3 class="project-card-title">Centralized Authorization System</h3>
+            <span class="project-badge">Production</span>
+          </div>
+          <p class="project-problem"><span class="label-micro">Problem</span> Fragmented access control across 3+
+            applications created duplicate role management, inconsistent permissions, and audit gaps in a regulated
+            banking environment.</p>
+          <p class="project-solution"><span class="label-micro">Solution</span> Designed a unified hierarchical
+            permission model consolidating all RBAC logic, with immutable timestamped audit logs for every role
+            assignment and permission change across all platform applications.</p>
+          <div class="project-stack">
+            <span class="tag tag-sm">Spring Security</span>
+            <span class="tag tag-sm">Spring Boot</span>
+            <span class="tag tag-sm">RBAC</span>
+            <span class="tag tag-sm">PostgreSQL</span>
+            <span class="tag tag-sm">REST APIs</span>
+          </div>
+          <p class="project-impact"><span class="label-micro">Impact</span> <strong>100% audit traceability</strong>
+            across all access events; eliminated manual log investigation and duplicate role management systems.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ EDUCATION + CERT -->
+  <section class="section" id="education">
+    <div class="container edu-grid">
+
+      <div>
+        <p class="section-label">05 / Education</p>
+        <div class="edu-card">
+          <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering</h3>
+          <p class="edu-school">Institute of Aeronautical Engineering, Hyderabad</p>
+          <p class="edu-meta">Aug 2019 – Jun 2023 &nbsp;·&nbsp; CGPA: <strong>8.3 / 10</strong></p>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label">Certifications</p>
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/1cc92a54e2a9442198c67aa1429c2218"
+            target="_blank">
+  
+              <p class="cert-name">AWS Certified Data Engineer – Associate</p>
+              <p class="cert-issuer">Amazon Web Services</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ RESUME -->
+  <section class="section section-alt" id="resume">
+    <div class="container resume-section">
+      <p class="section-label">06 / Resume</p>
+      <h2 class="section-heading">Want the full picture?</h2>
+      <p class="resume-body">Download or preview the resume to see the complete work history, projects, and technical
+        stack in one document.</p>
+      <div class="resume-cta">
+        <a href="Santhosh_Java_FullStack_Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+        <a href="Santhosh_Java_FullStack_Resume.pdf" download class="btn btn-outline">Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="section-label">07 / Contact</p>
+        <h2 class="section-heading">Let's talk systems.</h2>
+        <p class="contact-body">Open to backend, full-stack, and distributed systems roles. Reach out if you're looking
+          for an engineer who cares about performance, reliability, and real-world impact.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:santhoshangadipeta.sde@gmail.com" class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </span>
+          <span>santhoshangadipeta.sde@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/SanthoshAngadipeta" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </span>
+          <span>linkedin.com/in/SanthoshAngadipeta</span>
+        </a>
+        <a href="https://github.com/KodeWithSanthosh" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </span>
+          <span>github.com/KodeWithSanthosh</span>
+        </a>
+        <a href="https://leetcode.com/u/SanthoshSolves/" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </span>
+          <span>LeetCode Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">SA<span class="accent">.</span></span>
+      <span class="footer-copy">© 2025 Santhosh Angadipeta. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
